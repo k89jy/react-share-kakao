@@ -2,14 +2,13 @@ import React, { Component} from "react";
 import "./App.css";
 import {hot} from "react-hot-loader"
 
-class App extends Component{
-  render(){
+function App(){
     return(
-      <div className="App">
-        <h1> Hello, World!! </h1>
-      </div>
+      <button>
+        카카카오 공유
+      </button>
     );
-  }
+  
 }
 
 export default hot(module)(App);
