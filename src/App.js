@@ -4,9 +4,13 @@ import { hot } from "react-hot-loader";
 import { Helmet } from "react-helmet";
 
 function App() {
+
+  
   useEffect(() => {
+    
     const JAVASCRIPT_KEY = process.env.REACT_APP_JAVASCRIPT_KEY;
-    alert(JAVASCRIPT_KEY);
+
+   
     if (window.Kakao) {
       window.Kakao.init(JAVASCRIPT_KEY);
       if (window.Kakao.isInitialized()) {
@@ -17,6 +21,7 @@ function App() {
     } else {
       alert("no kakao api");
     }
+
   });
 
   return (
